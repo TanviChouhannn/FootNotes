@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FootNotes</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-amber-50">
+
+    <%- include('includes/nav.ejs') %>
+
+    <h1 class="text-center text-4xl font-bold text-red-900 mt-8">
+        Contact Us
+    </h1>
+
+    <p class="text-center text-gray-600 mt-3">
+        Have a question? Feel free to get in touch with us.
+    </p>
+
+    <div class="max-w-xl mx-auto mt-10 bg-white p-8 rounded-lg shadow">
+
+        <form action="/contact" method="post">
+
+            <div class="mb-5">
+                <label class="block font-semibold text-gray-700 mb-2">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    name="name"
+                    required
+                    class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-red-900">
+            </div>
+
+
+            <div class="mb-5">
+                <label class="block font-semibold text-gray-700 mb-2">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    name="email"
+                    required
+                    class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-red-900">
+            </div>
+
+
+            <div class="mb-5">
+                <label class="block font-semibold text-gray-700 mb-2">
+                    Mobile
+                </label>
+
+                <input
+                    type="tel"
+                    name="mobile"
+                    required
+                    class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-red-900">
+            </div>
+
+
+            <div class="mb-5">
+                <label class="block font-semibold text-gray-700 mb-2">
+                    Message
+                </label>
+
+                <textarea
+                    name="message"
+                    required
+                    rows="5"
+                    class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-red-900"></textarea>
+            </div>
+
+
+            <button
+                type="submit"
+                class="w-full bg-red-900 text-white py-2 rounded hover:bg-red-800">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+    <%- include('includes/footer.ejs') %>
+
+</body>
+
+</html>

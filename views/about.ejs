@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - FootNotes</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-amber-50">
+
+    <%- include('includes/nav.ejs') %>
+
+    <div class="max-w-5xl mx-auto px-8 py-16">
+
+        <!-- Heading -->
+        <div class="text-center mb-12">
+
+            <h1 class="text-4xl font-bold text-red-900">
+                About FootNotes
+            </h1>
+
+            <p class="text-gray-600 mt-3 text-lg">
+                A simple place for people who love books.
+            </p>
+
+        </div>
+
+
+        <!-- About -->
+        <div class="flex flex-col md:flex-row items-center gap-10">
+
+            <!-- Image -->
+            <div class="w-full md:w-1/2">
+
+                <img src="/uploads/home.jpg"
+                    alt="Bookstore"
+                    class="w-full h-80 object-cover rounded-lg">
+
+            </div>
+
+
+            <!-- Text -->
+            <div class="w-full md:w-1/2">
+
+                <h2 class="text-3xl font-bold text-red-900 mb-5">
+                    Our Story
+                </h2>
+
+                <p class="text-gray-700 text-lg leading-7 mb-4">
+                    Welcome to FootNotes! Our bookstore is a place where
+                    readers can find interesting books and discover new
+                    stories.
+                </p>
+
+                <p class="text-gray-700 text-lg leading-7 mb-4">
+                    We have books from different categories, so everyone
+                    can find something they enjoy reading. From fiction
+                    and classics to educational books, there is something
+                    for every reader.
+                </p>
+
+                <p class="text-gray-700 text-lg leading-7">
+                    Our goal is simple — to make finding and enjoying
+                    books easy and fun.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- What We Have -->
+        <div class="mt-16">
+
+            <h2 class="text-3xl font-bold text-red-900 text-center mb-8">
+                What We Offer
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold text-red-900 mb-3">
+                        Different Books
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Explore books from different categories and genres.
+                    </p>
+                </div>
+
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold text-red-900 mb-3">
+                        Easy to Explore
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Find and explore books easily from our collection.
+                    </p>
+                </div>
+
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold text-red-900 mb-3">
+                        For Everyone
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Our collection has something for different types of readers.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom -->
+        <div class="text-center mt-16">
+
+            <h2 class="text-2xl font-bold text-red-900">
+                Happy Reading! 📚
+            </h2>
+
+            <p class="text-gray-600 mt-2">
+                Explore our books and find your next favorite story.
+            </p>
+
+        </div>
+
+    </div>
+    <%- include('includes/footer.ejs') %>
+
+</body>
+
+</html>

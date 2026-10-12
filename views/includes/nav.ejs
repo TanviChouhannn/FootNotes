@@ -1,0 +1,71 @@
+<nav class="bg-red-950 text-white px-6 py-4">
+
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+
+        <a
+            href="/"
+            class="text-2xl font-bold">
+            FootNotes
+        </a>
+
+        <div class="flex items-center gap-6">
+
+            <a
+                href="/"
+                class="hover:text-amber-200">
+                Home
+            </a>
+
+            <a
+                href="/about"
+                class="hover:text-amber-200">
+                About
+            </a>
+
+            <a
+                href="/books"
+                class="hover:text-amber-200">
+                Books
+            </a>
+
+            <a
+                href="/categories"
+                class="hover:text-amber-200">
+                Categories
+            </a>
+
+            <a
+                href="/contact"
+                class="hover:text-amber-200">
+                Contact
+            </a>
+
+            <a
+                href="/cart"
+                class="border border-amber-200 px-4 py-2 rounded hover:bg-amber-200 hover:text-red-950">
+                Cart (<%= cartCount %>)
+            </a>
+
+            <% if (isAdmin) { %>
+
+                <a
+                    href="/books"
+                    class="border border-amber-200 px-4 py-2 rounded hover:bg-amber-200 hover:text-red-950">
+                    Admin Panel
+                </a>
+
+            <% } else { %>
+
+                <a
+                    href="/admin/login"
+                    class="border border-amber-200 px-4 py-2 rounded hover:bg-amber-200 hover:text-red-950">
+                    Admin
+                </a>
+
+            <% } %>
+
+        </div>
+
+    </div>
+
+</nav>
